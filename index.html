@@ -12,24 +12,29 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <form>
-      <input type="search" placeholder="Enter a city..." />
+      <input
+        class="form-control-sm"
+        type="search"
+        placeholder="Enter a city..."
+      />
       <input type="submit" value="Search" class="btn btn-primary" />
     </form>
     <div class="conatiner">
       <div class="row">
         <div class="col-6">
           <ul>
-            <li>21° F|C</li>
+            <li>21° F | C</li>
             <li>Wind speed</li>
           </ul>
         </div>
         <div class="col-6">
           <ul>
-            <li>City</li>
-            <li>Monday 12:56</li>
+            <li id="city">City</li>
+            <li id="dateTime"></li>
           </ul>
         </div>
       </div>
